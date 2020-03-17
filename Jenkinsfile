@@ -63,7 +63,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble      
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=atod --log_file=results_office/res_office_atod_resnet50_run${2}.txt --result_file=results_office/history_office_atod_resnet50_run${2}.h5 --model_file=results_office/model_office_atod_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=atod --log_file=results_office/res_office_atod_resnet50_run${2}.txt --result_file=results_office/history_office_atod_resnet50_run${2}.h5 --model_file=results_office/model_office_atod_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1
                 '''
                 }
             }
@@ -78,7 +78,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=atow --log_file=results_office/res_office_atow_resnet50_run${2}.txt --result_file=results_office/history_office_atow_resnet50_run${2}.h5 --model_file=results_office/model_office_atow_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=atow --log_file=results_office/res_office_atow_resnet50_run${2}.txt --result_file=results_office/history_office_atow_resnet50_run${2}.h5 --model_file=results_office/model_office_atow_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1
                 '''
                 }
             }
@@ -93,7 +93,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=dtoa --log_file=results_office/res_office_dtoa_resnet50_run${2}.txt --result_file=results_office/history_office_dtoa_resnet50_run${2}.h5 --model_file=results_office/model_office_dtoa_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=dtoa --log_file=results_office/res_office_dtoa_resnet50_run${2}.txt --result_file=results_office/history_office_dtoa_resnet50_run${2}.h5 --model_file=results_office/model_office_dtoa_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1 
                 '''
                 }
             }
@@ -108,7 +108,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=dtow --log_file=results_office/res_office_dtow_resnet50_run${2}.txt --result_file=results_office/history_office_dtow_resnet50_run${2}.h5 --model_file=results_office/model_office_dtow_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=dtow --log_file=results_office/res_office_dtow_resnet50_run${2}.txt --result_file=results_office/history_office_dtow_resnet50_run${2}.h5 --model_file=results_office/model_office_dtow_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1 
                 '''
                 }
             }
@@ -123,7 +123,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=wtoa --log_file=results_office/res_office_wtoa_resnet50_run${2}.txt --result_file=results_office/history_office_wtoa_resnet50_run${2}.h5 --model_file=results_office/model_office_wtoa_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=wtoa --log_file=results_office/res_office_wtoa_resnet50_run${2}.txt --result_file=results_office/history_office_wtoa_resnet50_run${2}.h5 --model_file=results_office/model_office_wtoa_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1 
                 '''
                 }
             }
@@ -138,7 +138,7 @@ pipeline {
                 mkdir -p export XDG_CACHE_HOME=/var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 mkdir -p results_office
-                venv/bin/python trainResnet50.py --category=wtod --log_file=results_office/res_office_wtod_resnet50_run${2}.txt --result_file=results_office/history_office_wtod_resnet50_run${2}.h5 --model_file=results_office/model_office_wtod_resnet50_run${2}.pkl --gpu_id=0 
+                venv/bin/python trainResnet50.py --category=wtod --log_file=results_office/res_office_wtod_resnet50_run${2}.txt --result_file=results_office/history_office_wtod_resnet50_run${2}.h5 --model_file=results_office/model_office_wtod_resnet50_run${2}.pkl --gpu_id=0 --num_epochs=1 
                 '''
                 }
             }
