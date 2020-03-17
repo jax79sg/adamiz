@@ -11,8 +11,7 @@ pipeline {
                 sh '''
                 export LC_ALL=C.UTF-8
                 export LANG=C.UTF-8
-                export XDG_CACHE_HOME=/.cache
-                mkdir -p /.cache
+                #export XDG_CACHE_HOME=.cache                
                 cd self-ensemble
                 python3 -m venv venv
                 venv/bin/pip install -r requirements.txt
