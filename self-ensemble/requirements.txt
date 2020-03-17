@@ -1,0 +1,13 @@
+requests
+pillow<7
+torchsummary
+torch==1.3.0
+torchvision==0.4.1
+scikit-image
+sklearn
+opencv-python
+batchup
+click
+tqdm
+h5py
+
