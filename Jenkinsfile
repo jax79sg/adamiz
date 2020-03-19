@@ -15,7 +15,7 @@ pipeline {
                 mkdir -p /var/jenkins_home/workspace/.cache
                 cd self-ensemble
                 python3 -m venv venv
-                venv/bin/pip install -r requirements.txt
+                venv/bin/pip install --upgrade --force-reinstall -r requirements.txt
                 '''
             }
         }
