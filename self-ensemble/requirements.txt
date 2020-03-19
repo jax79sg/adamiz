@@ -1,3 +1,4 @@
+wheel
 requests
 pillow<7
 torchsummary
