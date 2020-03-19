@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker { 
             image 'cuda:10.1-base-ubuntu18.04-custom' 
-            args '--gpus all'
+            args '--gpus all --no-cache'
         }
     }
     stages {
