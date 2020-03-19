@@ -158,6 +158,16 @@ pipeline {
                 }
             }
         }
+stage('cleanup') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                sh '''
+                exit
+                #  -- --model_file=results_office/model_office_atow_resnet50_run${2}.pkl --adamix -
+                '''
+                }
+            }
+        }
         
     }
 }
